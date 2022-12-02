@@ -1,23 +1,81 @@
 /* Постійні клієнти */
+.section-clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+}
+
 .section-clients__title {
+   
+
+  
+font-size: 28px;
+line-height: 1.18;
+margin-bottom: 30px;
+
+text-align: center;
+color: var(--title-color);
+
+
+@media screen and (min-width: 1200px){
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     margin-bottom: 50px;
     color: var(--title-color);
+}
+
+
   }
   
   .clients-icon {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  .clients-icon__item {
+    margin: 15px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 3 * 90px) / 3);
+    }
+  
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 6 * 180px) / 6);
+    }
   }
   
-  .clients-icon__item:not(:last-child) {
+  
+  
+  /*.clients-icon__item:not(:last-child) {
     margin-right: 30px;
-  }
+  }*/
   
   .clients-icon__link {
     display: flex;
+
+    @media screen and (min-width: 480px) {
+      width: 210px;
+      height: 92px;
+    }
+  
+    @media screen and (min-width: 768px) {
+      width: 226px;
+      height: 92px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 170px;
+      height: 92px;
+    }
+
     align-items: center;
     justify-content: center;
     width: 170px;
