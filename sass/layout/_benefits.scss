@@ -1,70 +1,63 @@
 /* Переваги */
 .section-benefits {
-  @media screen and (min-width: 1200px) {
-  
-   
-  }
+	@media screen and (min-width: 1200px) {
+	}
 }
 
-
 .benefits {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-   // width: 100%;
-   }
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		// width: 100%;
+	}
+}
 
-  
+.benefits__item {
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - 30px) / 2);
+		&:not(:last-child) {
+			margin-bottom: 0;
+		}
+	}
 
-  }
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc((100% - 90px) / 4);
+	}
+}
+.benefits__wrapper-svg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 4px;
+	margin-bottom: 30px;
 
+	background-color: #f5f4fa;
+}
+.benefits__icon {
+	width: 70px;
+	height: 70px;
+}
 
-  .benefits__item {
-    &:not(:last-child){
-      margin-bottom: 30px;
-    }
-    @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 30px) / 2);
-      &:not(:last-child){
-        margin-bottom: 0;
-      }
-    }
+.benefits__title {
+	@media screen and (max-width: 768px) {
+		text-align: center;
+	}
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
 
-    @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 90px) / 4);
-  }
-  
- 
+	margin-bottom: 10px;
 
-  }
-  .benefits__wrapper-svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 120px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-  
-    background-color: #f5f4fa;
-  }
-  .benefits__icon {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .benefits__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-  
-    margin-bottom: 10px;
-  
-    color: var(--title-color);
-  }
-  
-  .benefits__text {
-    line-height: 1.71;
-  }
+	color: var(--title-color);
+}
+
+.benefits__text {
+	line-height: 1.71;
+}
